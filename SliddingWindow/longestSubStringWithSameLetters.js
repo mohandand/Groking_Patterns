@@ -8,7 +8,7 @@ function longestSubString(str,k){
         (map[rightChar])?map[rightChar]++:map[rightChar]=1
         maxRepeatingStr = Math.max(maxRepeatingStr , map[rightChar])
 
-        if(i-startPointer+1 - maxRepeatingStr > k){
+        if(i-startPointer + 1 - maxRepeatingStr > k){
             let leftChar = str[startPointer];
         map[leftChar]--;
         startPointer++
