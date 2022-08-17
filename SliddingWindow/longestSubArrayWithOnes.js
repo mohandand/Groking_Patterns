@@ -8,10 +8,10 @@ function longestSubString(array,k){
     let maxLength=0
 
     for(let i=0;i<array.length;i++){
-        if(array[i]===0){
+        if(array[i]===1){
             numberOfOnes++
         }
-        if(i-numberOfOnes >k){
+        if((i-startPointer+1-numberOfOnes)>k){
            if(array[startPointer]==1){
             numberOfOnes--;
            }
