@@ -7,7 +7,7 @@ function sortedAraySquare(array){
     while(start<end){
         let s= array[start]*array[start]
         let e= array[end]*array[end]
-        if(s>end){
+        if(s>e){
             res[highestsqureIndex] = s;        
             start++
         }else{
