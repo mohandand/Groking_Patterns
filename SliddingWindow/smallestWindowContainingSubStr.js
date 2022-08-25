@@ -28,6 +28,15 @@ while(matched == pattern.length){
         minLength = i-startPointer+1
         subStrStart = startPointer
     }
+
+    const leftChar = str[startPointer];
+    startPointer++
+    if(leftChar in patternFrequ){
+        if(patternFrequ[leftChar] == 0){
+            matched--
+        }
+        ch
+    }
 }
 
     }
