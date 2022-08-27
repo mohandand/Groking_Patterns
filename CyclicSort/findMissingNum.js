@@ -1,20 +1,21 @@
 function findMisNum(array){
     let i = 0;
-    let j = array[i]-1;
+    
     while(i<array.length){
-        if(array[i] !==array[j]){
+        let j = array[i];
+        if(array[i]<array.length && array[i] !==array[j]){
             [array[i],array[j]] =[array[j],array[i]]
         }else{
             i++
         }
     } 
-
+console.log(array)
   for(i=0;i<array.length;i++){
     if(array[i]!== i){
         return i
     }
   }
-  return array.lenght;
+  return array.length;
 }
 
-console.log(findMisNum)
+console.log(findMisNum([3,2,1,0,5]))
