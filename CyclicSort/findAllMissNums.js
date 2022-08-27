@@ -8,5 +8,14 @@ function findAllMissNums(array){
             i++
         }
     }
+console.log(array)
+    let missingNums=[];
 
+    for(let i=0;i<array.length;i++){
+        if(array[i] !== i+1){
+            missingNums.push(i+1)
+        }
+    }
+return missingNums
 }
+console.log(findAllMissNums([2, 3, 1, 8, 2, 3, 5, 1]))
