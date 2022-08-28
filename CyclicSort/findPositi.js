@@ -15,5 +15,5 @@ function findPos(array){
             return i+1
         }
     }
-}
-conaole.log(findPos)
+}(
+conaole.log(findPos([-3, 1, 5, 4, 2])))
