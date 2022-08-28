@@ -21,7 +21,7 @@ function findDup(array){
         }
     }
 }
-console.log(findDup([1,4,3,2,4]))
+console.log(findDup([5, 4, 7, 2, 3, 5, 3]))
 
 // function findDup(array){
 //     let i = 0;
