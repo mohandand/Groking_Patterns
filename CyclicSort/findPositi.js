@@ -11,9 +11,9 @@ function findPos(array){
     }
 
     for(let i=0;i<n;i++){
-        if(num[i]!==i+1){
+        if(array[i]!==i+1){
             return i+1
         }
     }
-}(
-conaole.log(findPos([-3, 1, 5, 4, 2])))
+}
+console.log(findPos([-3, 1, 5, 4, 2]))
