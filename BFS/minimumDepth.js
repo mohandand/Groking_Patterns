@@ -45,7 +45,7 @@ function minimumDepth(root){
         for(let i=0;i<levelSize;i++){
             let currNode = queue.shift();
 
-            if(currNode.left==null || currNode.right==null){
+            if(currNode.left==null && currNode.right==null){
                 return minimumDep
             }
 
@@ -61,4 +61,4 @@ function minimumDepth(root){
     }
 }
 
-console.log(minimumDepth(1))
+console.log(minimumDepth(a))
