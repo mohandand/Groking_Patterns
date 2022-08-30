@@ -39,7 +39,7 @@ function bfsLevel(root){
     let currentLevel = []
     for(let i = 0;i<levelSize;i++){
         let currNode = queue.shift();
-        currentLevel.push(currNode)
+        currentLevel.push(currNode.val)
         if(currNode.left!==null){
             queue.push(currNode.left)
         }
